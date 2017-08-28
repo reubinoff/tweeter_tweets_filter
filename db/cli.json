@@ -1,0 +1,33 @@
+// mongo db creation
+
+//mongoimport testdata.manual.2009.06.14.csv --type csv --fields polarity,tweet_id,tweet_date,tweet_query,user,tweet_text --collection tweets --db tweets_db
+db.createCollection( "tweets",   {  
+    validator: {
+        $or:    [
+            {
+                tweet_date : {
+                    $type: "date"
+                    
+                }
+            },
+            {
+                polarity:{
+                    $type: "int"
+                }
+                
+            },
+                    {
+                tweet_id:{
+                    $type: "int"
+                }
+                
+            },
+            {
+                tweet_id:{
+                    $type: "int"
+                }
+                
+            }
+            ]
+    }
+});

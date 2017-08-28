@@ -1,0 +1,23 @@
+
+
+
+.navbar-default {
+  border-color: transparent;
+  background-color: #696866
+}
+
+.navbar-inverse .navbar-fnt {
+  color: #FFFFFF;
+}
+.navbar-inverse .navbar-backgrnd {
+  color: #CC3333; 
+}
+
+
+
+.btn-google 
+{
+  background: #c32f10;  
+  width: 30%;
+}
+.btn-google:hover {background: #C24C32;}
